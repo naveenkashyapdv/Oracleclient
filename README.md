@@ -2,7 +2,7 @@
 
 This cookbook is concerned with a full installation of OracleClient. This will give access to oracle-cient, sqlplus etc. 
 
-Platform Support
+Platform Support \n
 centos  - 6, 7   
 RHEL    - 6, 7 
 
@@ -12,7 +12,7 @@ Place a dependency on the OracleClient cookbook in your cookbook's metadata file
 
 Required pakages package ['glibc', 'compat-libstdc++-33', 'compat-db', 'ld-linux.so.2']
 
-INSTALLED from the response file template. 
+INSTALLED from the response file template. \n
 ####################
 oracle.install.responseFileVersion=/oracle/install/rspfmt_clientinstall_response_schema_v12.1.0
 ORACLE_HOSTNAME=localhost
