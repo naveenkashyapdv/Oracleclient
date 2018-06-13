@@ -1,0 +1,43 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: 
+  instance_type: 
+  security_group_ids:
+  subnet_id: 
+  region: 
+  availability_zone: us-west-2c
+  associate_public_ip: true
+  iam_profile_name: ec2
+  tags:
+    Name: "oracle"
+    Savepower: "true"
+    InitDate: "<%= Time.now %>"
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: '12.15'
+
+
+platforms:
+  - name: Rhel-7.4
+    driver:
+      image_id:  ami-28e07e50
+      block_device_mappings:
+        - device_name: /dev/sdb
+          ebs:
+            volume_type: gp2
+            volume_size: 30
+            delete_on_termination: true
+transport:
+  ssh_key: 
+  username: 
+
+suites:
+  - name: default
+    run_list:
+      - recipe[petco_oracleclient::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
