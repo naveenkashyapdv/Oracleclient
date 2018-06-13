@@ -3,6 +3,7 @@
 This cookbook is concerned with a full installation of OracleClient. This will give access to oracle-cient, sqlplus etc. 
 
 Platform Support 
+
 centos  - 6, 7   
 RHEL    - 6, 7 
 
@@ -26,8 +27,10 @@ oracle.installer.autoupdates.option=SKIP_UPDATES
 PROXY_PORT=0
 
 ###################
+
 Code Block
-########################
+
+
 template "#{node['Oracle_client']['oracle_responsefile']}" do
   source 'dbclient_install.rsp.erb'
   owner 'oracle'
