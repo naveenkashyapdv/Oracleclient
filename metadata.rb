@@ -1,4 +1,4 @@
-name 'OracleClient'
+name 'oracleclient'
 maintainer 'VenkatNaveen'
 maintainer_email 'venkatnaveenkashyap@gmail.com'
 license 'All Rights Reserved'
