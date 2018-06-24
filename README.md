@@ -36,14 +36,16 @@ Place a dependency on the OracleClient cookbook in your cookbook's metadata file
 ### Code Block
 
 
-```template "#{node['Oracle_client']['oracle_responsefile']}" do
+```RUBY
+template "#{node['Oracle_client']['oracle_responsefile']}" do
 source 'dbclient_install.rsp.erb'
 owner 'oracle'
 group 'dba'
 mode '0755'
 action :create
-end```
-
+end
+```
+```RUBY
 execute 'oracle_client_Instillation' do
 command "#{node['Oracle_client']['installtion_path']} -silent -responseFile '#{node['Oracle_client']['oracle_responsefile']}' -ignoreSysPrereqs -waitforcompletion -showProgress oracle.install.option=INSTALL_DB_SWONLY"
 user 'oracle'
@@ -51,3 +53,4 @@ group 'dba'
 not_if{::File.exist?("#{node['oracle_client']['Product_path']}")}
 ignore_failure true
 end
+```
