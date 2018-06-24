@@ -5,7 +5,11 @@ OracleClient
 "This cookbook is concerned with a full installation of OracleClient. This will give access to oracle-cient, sqlplus etc.
 Platform Support\"
 
-
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 OS	Version\
 Centos	6, 7\
