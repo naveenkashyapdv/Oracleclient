@@ -7,7 +7,7 @@ Platform Support\"
 
 
 
-OS	Version
+OS	Version\
 Centos	6, 7
 RHEL	6, 7
 Usage
