@@ -33,7 +33,7 @@ Place a dependency on the OracleClient cookbook in your cookbook's metadata file
 >PROXY_PORT=0\
 
 
-**Code Block************
+**Code Block
 
 
 ```template "#{node['Oracle_client']['oracle_responsefile']}" do
