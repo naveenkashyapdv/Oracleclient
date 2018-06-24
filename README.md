@@ -18,7 +18,7 @@
 Place a dependency on the OracleClient cookbook in your cookbook's metadata file include_recipe 'build-essential' depends 'build-essential
 
 #### Required pakages package ['glibc', 'compat-libstdc++-33', 'compat-db', 'ld-linux.so.2']\
-```
+
 >INSTALLED from the response file template
 
 >oracle.install.responseFileVersion=/oracle/install/rspfmt_clientinstall_response_schema_v12.1.0\
@@ -30,7 +30,7 @@ Place a dependency on the OracleClient cookbook in your cookbook's metadata file
 >ORACLE_BASE=/app/oracle\
 >oracle.install.client.installType=Administrator\
 >oracle.installer.autoupdates.option=SKIP_UPDATES\
->PROXY_PORT=0\ ```
+>PROXY_PORT=0\ 
 
 
 ### Code Block
