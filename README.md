@@ -8,8 +8,8 @@ Platform Support\"
 
 
 OS	Version\
-Centos	6, 7
-RHEL	6, 7
+Centos	6, 7\
+RHEL	6, 7\
 Usage
 Place a dependency on the OracleClient cookbook in your cookbook's metadata file include_recipe 'build-essential' depends 'build-essential'
 Required pakages package ['glibc', 'compat-libstdc++-33', 'compat-db', 'ld-linux.so.2']
