@@ -5,15 +5,13 @@ OracleClient
 "This cookbook is concerned with a full installation of OracleClient. This will give access to oracle-cient, sqlplus etc.
 Platform Support\"
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Os            | Version       | 
+| ------------- |:-------------:| 
+| Centos        | 6             | 
+| RHEL          | 7             | 
+|               |               |
 
-OS	Version\
-Centos	6, 7\
-RHEL	6, 7
+
 
 Usage\
 Place a dependency on the OracleClient cookbook in your cookbook's metadata file include_recipe 'build-essential' depends 'build-essential'\
