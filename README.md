@@ -1,15 +1,15 @@
-OracleClient
+**OracleClient**
 
 
 
-"This cookbook is concerned with a full installation of OracleClient. This will give access to oracle-cient, sqlplus etc.
-Platform Support\"
+**This cookbook is concerned with a full installation of OracleClient. This will give access to oracle-cient, sqlplus etc**
+
+**Platform Support**
 
 | Os            | Version       | 
 | ------------- |:-------------:| 
 | Centos        | 6             | 
 | RHEL          | 7             | 
-|               |               |
 
 
 
