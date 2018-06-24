@@ -13,13 +13,13 @@
 
 
 
-Usage\
-Place a dependency on the OracleClient cookbook in your cookbook's metadata file include_recipe 'build-essential' depends 'build-essential'\
+***Usage**
 
-Required pakages package ['glibc', 'compat-libstdc++-33', 'compat-db', 'ld-linux.so.2']\
-INSTALLED from the response file template\.
-####################
+Place a dependency on the OracleClient cookbook in your cookbook's metadata file include_recipe 'build-essential' depends 'build-essential
 
+**Required pakages package ['glibc', 'compat-libstdc++-33', 'compat-db', 'ld-linux.so.2']\
+
+>INSTALLED from the response file template
 
 >oracle.install.responseFileVersion=/oracle/install/rspfmt_clientinstall_response_schema_v12.1.0\
 >ORACLE_HOSTNAME=localhost\
@@ -36,13 +36,13 @@ INSTALLED from the response file template\.
 Code Block\
 
 
-template "#{node['Oracle_client']['oracle_responsefile']}" do
+```template "#{node['Oracle_client']['oracle_responsefile']}" do
 source 'dbclient_install.rsp.erb'
 owner 'oracle'
 group 'dba'
 mode '0755'
 action :create
-end
+end```
 
 execute 'oracle_client_Instillation' do
 command "#{node['Oracle_client']['installtion_path']} -silent -responseFile '#{node['Oracle_client']['oracle_responsefile']}' -ignoreSysPrereqs -waitforcompletion -showProgress oracle.install.option=INSTALL_DB_SWONLY"
