@@ -21,16 +21,16 @@ INSTALLED from the response file template\.
 ####################
 
 
-oracle.install.responseFileVersion=/oracle/install/rspfmt_clientinstall_response_schema_v12.1.0\
-ORACLE_HOSTNAME=localhost\
-UNIX_GROUP_NAME=root\
-INVENTORY_LOCATION=/app/oracle/oracleclient\
-SELECTED_LANGUAGES=en\
-ORACLE_HOME=/app/oracle/product/12.2.0.1.0/client_1\
-ORACLE_BASE=/app/oracle\
-oracle.install.client.installType=Administrator\
-oracle.installer.autoupdates.option=SKIP_UPDATES\
-PROXY_PORT=0\
+>oracle.install.responseFileVersion=/oracle/install/rspfmt_clientinstall_response_schema_v12.1.0\
+>ORACLE_HOSTNAME=localhost\
+>UNIX_GROUP_NAME=root\
+>INVENTORY_LOCATION=/app/oracle/oracleclient\
+>SELECTED_LANGUAGES=en\
+>ORACLE_HOME=/app/oracle/product/12.2.0.1.0/client_1\
+>ORACLE_BASE=/app/oracle\
+>oracle.install.client.installType=Administrator\
+>oracle.installer.autoupdates.option=SKIP_UPDATES\
+>PROXY_PORT=0\
 
 
 Code Block\
